@@ -25,3 +25,6 @@
 
 ## 参考文献
 * https://www.jenkins.io/doc/book/installing/docker/
+* Node.js のセットアップ
+    * https://nodejs.org/ja/download/package-manager/all#debian-and-ubuntu-based-linux-distributions
+    * https://github.com/nodesource/distributions/wiki/How-to-select-the-Node.js-version-to-install#instructions-for-debian-systems

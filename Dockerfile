@@ -13,3 +13,11 @@ RUN apt-get update && apt-get install -y lsb-release ca-certificates curl && \
 
 USER jenkins
 RUN jenkins-plugin-cli --plugins "blueocean docker-workflow json-path-api"
+
+USER root
+# https://github.com/nodesource/distributions/wiki/How-to-select-the-Node.js-version-to-install#instructions-for-debian-systems
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh && \
+    bash nodesource_setup.sh && \
+    apt-get install -y nodejs=20.18.3-1nodesource1
+
+USER jenkins
