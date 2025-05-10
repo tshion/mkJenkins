@@ -4,7 +4,7 @@
 
 ## 構築手順
 1. `docker network create jenkins`
-1. `docker build -t myjenkins:????.??.?? .`
+1. `docker build -t mkjenkins:????.??.?? .`
 1.
     ``` shell
     docker run \
@@ -19,7 +19,7 @@
         --publish 50000:50000 \
         --volume jenkins-data:/var/jenkins_home \
         --volume jenkins-docker-certs:/certs/client:ro \
-        myjenkins:????.??.??
+        mkjenkins:????.??.??
     ```
 
 
